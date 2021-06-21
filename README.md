@@ -1,38 +1,24 @@
-Blogging with Sanity and Next.js
-Read the tutorial
+# Next.js blog with comment section
 
-Get started
-# Install the Sanity command line interface
-~/
-> npm i -g @sanity/cli
+Your site https://blog-w-comments.vercel.app
+Sanity Studio https://blog-w-comments.vercel.app/studio
+Vercel project https://vercel.com/bgoonz/blog-w-comments
+Vercel deployment https://vercel.com/bgoonz/blog-w-comments/8xgNHDeMzzSZG7vf5raE6sRRdMdg
 
-# Initiate your own project in the studio folder
-~/this-blog/studio
-> sanity init
+### Running the front-end
 
-# Add a CORS-origin rule to allow the frontend to request data
-~/this-blog/studio
-> sanity cors add http://localhost:3000 --no-credentials
+Rename the `.env.test` file to `.env` and store the environment variables that Next and Sanity will use to pull data from the Sanity API. You can get or create the tokens, ids, and secrets from [manage.sanity.io](https://manage.sanity.io).
 
-# Insert the projectId and dataset name from Sanity in client.js
-~/this-blog/web
-> nano client.js
+Once those env variables are ready, you can run the following commands to get Next's development server up and running:
 
-# Install frontend dependencies
-~/this-blog/web
-> npm install
+```bash
+npm install
 
-# Run Next.js in development mode
-~/this-blog/web
-> npm run dev
-Deploy on now
-~/this-blog/web
-> npm i -g now
-> now login
-> now
-Deploy as a static site on Netlify
-Read the tutorial
+# Run the frontend
+npm run dev
 
-~/this-blog/web
-npm run export
-# exports your site as static files in /out
+# Run the Studio
+npm run start:sanity
+```
+
+The blog will be running at `http://localhost:3000`, the Studio will run at `http://localhost:3333`.
