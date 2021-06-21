@@ -1,9 +1,9 @@
 # Next.js blog with comment section
 
-Your site	https://blog-w-comments.vercel.app
-Sanity Studio	https://blog-w-comments.vercel.app/studio
-Vercel project	https://vercel.com/bgoonz/blog-w-comments
-Vercel deployment	https://vercel.com/bgoonz/blog-w-comments/8xgNHDeMzzSZG7vf5raE6sRRdMdg
+Your site https://blog-w-comments.vercel.app
+Sanity Studio https://blog-w-comments.vercel.app/studio
+Vercel project https://vercel.com/bgoonz/blog-w-comments
+Vercel deployment https://vercel.com/bgoonz/blog-w-comments/8xgNHDeMzzSZG7vf5raE6sRRdMdg
 
 ### Running the front-end
 
