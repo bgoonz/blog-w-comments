@@ -11,6 +11,7 @@
     "postinstall": "lerna bootstrap"
   },
   "dependencies": {
+    "@bgoonz11/repoutils": "^1.0.5",
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.8.0",
     "@sanity/image-url": "^0.140.19",
