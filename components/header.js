@@ -10,7 +10,7 @@ export default function Header() {
       .
     </h2>
       <div>
-        <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
+        <a className="github-corner" href="https://github.com/bgoonz/BLOG-W-COMMENTS" aria-label="View source on Github">
           <svg aria-hidden="true" width={ 80 } height={ 80 } viewBox="0 0 250 250" style={ { zIndex: 100000, fill: '#194ccdaf', color: '#fff', position: 'fixed', top: '20px', border: 0, left: '20px', transform: 'scale(-1.5, 1.5)' } }>
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
             </path>
