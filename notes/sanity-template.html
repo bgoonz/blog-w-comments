@@ -1,0 +1,359 @@
+<!DOCTYPE html><html><head>
+      <title>sanity-template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\bryan\.vscode-insiders\extensions\shd101wyy.markdown-preview-enhanced-0.5.22\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="tutorial-make-a-blog-with-nextjs-react-and-sanity">Tutorial: Make a blog with Next.js, React and Sanity</h1>
+
+<blockquote>
+<p>Sometimes you just need a blog. So why not build it with something shiny like Sanity Headless CMS, React, and Next.js?</p>
+</blockquote>
+<p>Sometimes you just need a blog. While there are loads of blogging platforms, there might be good reasons for having your blog content live along with your other content, be it documentation (as in our case), products, a portfolio or what have you. The content model, or the data schema, for a blog is also an easy place to get started with making something headless with Sanity and a detached frontend.</p>
+<p>In this tutorial we&apos;ll make a blog with Sanity as the content backend and the React-based framework Next.js for rendering web pages.</p>
+<p>If you don&apos;t feel like typing all the below, you can also:</p>
+<p><a href="https://github.com/sanity-io/sanity-blog-tutorial">Check out the code on Github</a></p>
+<h2 class="mume-header" id="efb2b8be790b0-create-a-project-folder-and-a-monorepo"><a href="#efb2b8be790b"></a>0. Create a project folder and a monorepo</h2>
+
+<p>In this project you will have two separate web apps:</p>
+<ol>
+<li>Sanity Studio&#xA0;&#x2013;&#xA0;a React app that connects to the hosted API with all your blog content</li>
+<li>The blog frontend - a website built with Next.js</li>
+</ol>
+<p>It can be useful to keep these codebases in the same folder and git repository (but you don&apos;t have to). Create a folder structure like this:</p>
+<p>You can also place <code>.gitignore</code>, <code>.editorconfig</code>, or other config files in the root, as well as a <code>README.md</code>. If you want to track the project with git, run the command <code>git init</code> i the root folder in your terminal (or add the folder to your Git GUI tool of choice).</p>
+<h2 class="mume-header" id="6122154b45e41-install-sanity-and-the-preconfigured-blog-schemas"><a href="#6122154b45e4"></a>1. Install Sanity and the preconfigured blog schemas</h2>
+
+<p>If you haven&apos;t already done so, install the Sanity Command Line (CLI) tooling with node package manager (<a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">how to install npm</a>).</p>
+<p>This allows you to run the <code>sanity init</code> command in your studio folder, and indeed, this is the next step. You&apos;ll be asked to create an account with your Google or Github login, or you can create a new account directly with <a href="http://Sanity.io">Sanity.io</a>. Afterwards you can create <strong>a new project</strong>, upon where you&apos;ll be asked to choose a project template. Select the <strong>blog schema template</strong>. First though, you&apos;ll need to give your project and dataset a name (you can add more datasets if you need one for testing) and choose the path to your studio folder.</p>
+<p>When the installation is done, you can run <code>sanity start</code> inside the studio to launch the Studio where you can start editing your content. This content will be instantly synced to the cloud and available through the public APIs once you hit publish. By running <code>sanity deploy</code> you&apos;ll upload the studio and make it available on the web for those with access (you can add users by navigating to <a href="https://manage.sanity.io/">manage.sanity.io</a>).</p>
+<p>There&apos;s a lot you can do with the schemas now stored in your studio folder under <code>schemas/schema.js</code>, but that&apos;s for another tutorial. For now, we just want our blog up and running!</p>
+<h2 class="mume-header" id="c5c3383956b12-install-nextjs-and-get-it-running"><a href="#c5c3383956b1"></a>2. Install Next.js and get it running</h2>
+
+<p><a href="https://github.com/zeit/next.js/">Next.js</a> (by the industrious company <a href="https://zeit.co/">Zeit</a>) comes with a neat setup for making React-based webpages that has server rendering on the first request, and lots of other useful features. If you are used to React or have tried out <a href="https://github.com/facebook/create-react-app">create-react-app</a>, it shouldn&apos;t be too hard to get started with. There is an excellent tutorial<a href="https://nextjs.org/learn/basics/getting-started/setup"></a> that goes a bit deeper on <a href="https://nextjs.org/">nextjs.org</a>, but you should be able to tag along with this for now.</p>
+<p>Run <code>npm init -y</code> in your web folder to create a package.json file for your project. After, install your Next.js dependencies with</p>
+<p>and add the following to your package.json:</p>
+<p>Now your package.json should look similar to this:</p>
+<p>Next.js does routing out of the box based on where you plonk down files on your filesystem. So if you add a folder called <code>pages</code> and add to it <code>index.js</code> it will become the front page of your site. Likewise, if you add <code>about.js</code> in <code>/pages</code>, this will show up on <a href="http://localhost:3000/about"><code>localhost:3000/about</code></a> once you spin up the project. Just to make sure you have everything in place, try to add the following code to <code>pages/index.js</code>, and type <code>npm run dev</code> in your shell:</p>
+<p>Now you should have a greeting to the world if you head to <a href="http://localhost:3000/"><code>localhost:3000</code></a> in your browser.</p>
+<h2 class="mume-header" id="9e1fb1526b043-make-a-dynamic-page-template"><a href="#9e1fb1526b04"></a>3. Make a dynamic page template</h2>
+
+<p>So far so good, but now for the interesting part: Let&#x2019;s fetch some content from Sanity and render it in React. Quit the next dev server with <code>ctrl + c</code>. Begin by installing the necessary dependencies for connecting to the Sanity API: <code>npm install @sanity/client</code>. Create a new file called <code>client.js</code> in the root frontend folder. Open the file and put in the following:</p>
+<p>The <code>projectId</code> and <code>dataset</code>-name should be the same as those you&apos;ll find in your <code>sanity.json</code> file in the studio folder. Now you can import this client when you need to fetch some content from your Sanity project.</p>
+<p>Adding a new file for every new blog entry would be impractical. A hassle even. So let&apos;s make a page template that makes it possible for us to use the URL slugs from Sanity. Version 9 of Next.js introduced dynamic routing out for the box, where you had to use a custom server on earlier versions.</p>
+<p>Add a <code>post.js</code> file to your pages folder as well, it should now look like this:</p>
+<p>Open <code>post.js</code> and add the following code to it:</p>
+<p>If you go to <code>localhost:3000/post?slug=whatever</code> you should now see &#x201C;whatever&#x201D;&#xA0;printed as an H1 on the page.</p>
+<p>Wouldn&apos;t it be neat to have a bit nicer URLs? Next.js also lets you do clean URLs with dynamic routing. First, we have to add a folder called <code>post</code> inside of our <code>pages</code> folder, move your <code>post.js</code> file inside of the <code>post</code> folder and rename it to <code>[slug].js</code> &#x2013; yes, <em>with</em> the square brackets. Now you can go to <code>localhost:3000/post/whatever</code> and see the same result as before: &quot;whatever&quot; printer as an H1.</p>
+<h2 class="mume-header" id="c69ec037032f4-get-some-content-from-sanity"><a href="#c69ec037032f"></a>4. Get some content from Sanity</h2>
+
+<p>If you haven&apos;t already, this is the point you should go back to your studio folder, make sure that sanity start is running and add a new post with some content in it. Create a post with the title &quot;Hello world!&quot; and hit <strong>Generate</strong> for the slug. Remember to hit <strong>publish</strong> (the blue button on the bottom where you edit your post) to make the content available in the public API.</p>
+<p>If you greet the world, the world will eventually greet you back</p>
+<p>Next.js comes with a special function called <code>getInitialProps</code> that is called and returns props to the react component before rendering the templates in <code>/pages</code>. This is a perfect place for fetching the data you want for a page.</p>
+<p>We have now set up Next.js with a template for the front page (index.js), and a dynamic routing that makes it possible for the <code>[slug].js</code> template to take a slug under <code>/post/</code> as a query. Now the fun part begins, let&apos;s add some Sanity to the mix:</p>
+<p>We&apos;re using async/await since we&apos;re doing an asynchronous API-call as it makes the code a bit easier to follow. We have also removed the router since the function for <code>getInitialProps</code> gets the same information in <code>context</code>. <code>client.fetch()</code> takes two arguments: <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/how-queries-work">a query</a> and an object with parameters and values.</p>
+<p>In order to allow the frontend server to actually get data from Sanity, we have to add its domain to <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/cors">CORS-settings</a>. In other words, we have to add <code>localhost:3000</code> (and eventually the domain you&apos;re hosting your blog on) to Sanity&#x2019;s CORS origin settings. If you enter <code>sanity manage</code> into your shell you&apos;ll be taken to the project&#x2019;s settings in your browser. Navigate to settings and add <code>http://localhost:3000</code> as a new origin.</p>
+<p>Go to <a href="http://localhost:3000/post/hello-world">http://localhost:3000/post/hello-world</a> and confirm that the H1 spells &#x201C;Hello world!&#x201D; (If it doesn&apos;t work, make sure that the slug field in the Studio says <strong>hello-world</strong>, and that the post is published).</p>
+<p>You have now successfully connected your frontend with Sanity. &#x1F389;</p>
+<h2 class="mume-header" id="2dac7329b33e5-add-a-byline-with-author-and-categories"><a href="#2dac7329b33e"></a>5. Add a byline with author and categories</h2>
+
+<p>In the Studio you&apos;ll discover, that you can add entries for authors and categories. Go and add at least one author with an image.</p>
+<p>Yours truly</p>
+<p>Go back to your blog post, and attach this author in the Author field, like this:</p>
+<p>Publish the changes. What we have just done is to <em>reference</em> an author from the blog post. References are a powerful part of Sanity and make it possible to connect and reuse content across types. If <em>inspect</em> your block document (<code>ctrl+alt+i</code> on Windows, or <code>ctrl+opt+i</code> on macOS) in the Studio you&apos;ll see that the object looks something like this:</p>
+<p>This is the content we would get if we now just pulled out the author-variable (<code>const { title, author } = await client.fetch(&apos;*[slug.current == $slug][0]&apos;,{ slug })</code>), which is not very useful to us in this case. This is where <em>projections</em> in GROQ comes handy. <a href="https://www.sanity.io/docs/data-store/query-cheat-sheet#object-projections">Projections is a powerful feature of GROQ</a> and allow us to specify the API-response to our needs. Head back to editor and add the projection <code>{title, &quot;name&quot;: author-&gt;name}</code> right after the filter (<code>*[_type == &quot;post&quot; &amp;&amp; slug.current == $slug][0]</code>):</p>
+<p>Here I have added the projection <code>{title, &quot;name&quot;: author-&gt;name}</code> to our query. Here we specify what in the document I want to be returned in the API call. We need to make a key for the author name, and follow the reference to the name-property on the author document with an arrow <code>-&gt;</code>. In other words, we ask Sanity to follow the id under <code>_ref</code>, and return just the value for the variable called <code>name</code> from that document.</p>
+<p>Let&apos;s try to do the same with categories. First, create at least two categories in the Sanity Studio, remember to publish them as well. I added one for <em>Frontend</em> and one for <em>Web</em>.</p>
+<p>Add the categories to your blog post</p>
+<p>Now we have an array of references to categories in our blog post. If you take a peek in the document inspector you&apos;ll see that these show up just as the author entry, objects with a <code>_ref</code>-id. So we have to use projections to get those as well. Now the GROQ query has grown, so we&apos;ll change it to a variable, and add the npm package <a href="https://www.npmjs.com/package/groq">groq</a> (<code>npm install groq</code>) to get support for <a href="https://github.com/sanity-io/vscode-sanity">syntax highlighting</a> (in VS Code).</p>
+<p>The projection for categories is done similarly to the author reference, the only difference is that we attach square brackets to the key <code>categories</code> because it is an array of references. So <code>categories[]-&gt;title</code> means &quot;loop through all the entries in categories and returns the title from the referenced document&quot;.</p>
+<p>But we want to add the photo of the author to the byline as well! Images and file assets in Sanity are also references, which means that if we are to get the author image we first have to follow the reference to the author document, and to the image asset. We could retrieve the imageUrl directly by accessing <code>&quot;imageUrl&quot;: author-&gt;image.asset-&gt;url</code>, but this where it&apos;s easier to use the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/presenting-images">image url-package</a> we&apos;ve made. Install the package in the frontend-project with <code>npm i @sanity/image-url</code>. It takes the image object and figures out where to get the image, it makes it easier to use the <a href="https://www.sanity.io/docs/front-ends/presenting-images#the-crop-and-hot-spot">hot spot-features</a> and so on as well.</p>
+<p>Having put in the code lines for the image URL-builder, we can send in the image-object from Sanity in the <code>urlFor()</code> function, and append the different methods (e.g. <code>.width(50)</code>) with the <code>.url()</code>-method at the end.</p>
+<h2 class="mume-header" id="277554f833056-add-rich-text-content-with-portable-text"><a href="#277554f83305"></a>6. Add rich text content with Portable Text</h2>
+
+<p>A blog wouldn&apos;t be much without great support for text content. Rich text in Sanity is stored as <a href="https://www.portabletext.org/">Portable Text</a> which lets us use it many different contexts: from HTML in the browser to speech fulfillments in <a href="https://www.smashingmagazine.com/2019/03/sanity-portabletext-speech-synthesis/">voice interfaces</a>. There&apos;s a lot to be said about Portable Text and the extensibility of it, but in this tutorial, we&apos;ll just use the out-of-the-box features that come with the package <a href="https://github.com/sanity-io/block-content-to-react">block-content-to-react</a>. Install it with <code>npm install @sanity/block-content-to-react</code>.</p>
+<p>We import the react-component as <code>BlockContent</code>, and get the body from the post-document. We send in the body as <code>blocks</code>-prop, and add <code>{...client.config()}</code> in order to let the <code>BlockContent</code> component know where (using the <code>projectId</code> and the <code>dataset</code> name) to get the images that might come in the rich text field.</p>
+<p>We also added a prop called <code>imageOptions</code>, which controls the default output of images. And that&apos;s it! You can <a href="https://github.com/sanity-io/block-content-to-react">customize the output of different elements, and even add your own custom block-types</a> by sending in what we have called &#x201C;serializers&#x201D; &#x2013;&#xA0;those we&apos;ll cover in another blog post.</p>
+<p>If everything went well, you should have a bare-bones blog template in place</p>
+<h2 class="mume-header" id="1da9df69a1f77-add-the-blog-posts-to-the-frontpage"><a href="#1da9df69a1f7"></a>7. Add the blog posts to the frontpage</h2>
+
+<p>Now we want to have a simple list of your blog posts on the frontpage, that is, in <code>index.js</code>. We have already been through most of the requirements using the <code>client</code> to fetch data from Sanity, and <code>getInitialProps</code> to make the data available in the frontend template.</p>
+<p>If you look closer at the GROQ query in <code>Index.getInitialProps</code> you&apos;ll notice that we look for documents that have <code>_type == &quot;post&quot;</code> and has a publish date that is lesser (i.e. before) whatever time it is at the moment. We also order the results after the publishing data, so that the newest posts end up first in the list.</p>
+<p>In the template we loop (<code>map</code>) over the array of posts, and build the links using <a href="https://nextjs.org/learn/basics/clean-urls-with-dynamic-routing/dynamic-routing">Next.js Link component</a>. We point the <code>href</code> to the file path, and use <code>as</code> for the URL-slug.</p>
+<h2 class="mume-header" id="3085b10bbadddeploy-your-blog-on-the-web-with-now"><a href="#3085b10bbadd"></a>Deploy your blog on the web with <code>now</code></h2>
+
+<p>To get your new blog on the web you can use Zeit&#x2019;s now service. Install the CLI with <code>npm i -g now</code> and run the command <code>now login</code> to create an account. Once that&apos;s done, you can run <code>now</code> in the webfolder to deploy the blog. Remember to add your URL to the CORS origin settings. You can also connect a <a href="https://zeit.co/docs/v2/custom-domains/">custom domain to your deployment on <code>now</code></a> (remember CORS for that too).</p>
+<p>And that&apos;s it for this tutorial! We have now covered a lot of ground when it comes to coding a frontend layer for a pretty common content setup, and yet just scraped the iceberg of features and nifty things we can do with the combination of Sanity and React. Of course, your work doesn&apos;t end here. Now you should make this blog your own with more HTML, CSS, and JavaScript.</p>
+<p>You can download the <a href="https://github.com/sanity-io/sanity-blog-tutorial">example project from GitHub</a>, and feel free asking us questions on <a href="https://gitter.im/sanity-io/sanity"></a><a href="https://slack.sanity.io/">Slack</a>, or however else you might find us.</p>
+<p><a href="https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=readme">Source</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
