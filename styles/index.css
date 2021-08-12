@@ -9,3 +9,8 @@ article a {
 
 /* purgecss end ignore */
 @tailwind utilities;
+
+img{
+  height: 250px!important;
+  width:500px!important;
+}
