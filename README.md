@@ -1,5 +1,10 @@
 # Next.js blog with comment section
 
+
+- [NETLIFY](https://app.netlify.com/teams/bgoonz/overview)
+
+
+
 Your site https://blog-w-comments.vercel.app
 Sanity Studio https://blog-w-comments.vercel.app/studio
 Vercel project https://vercel.com/bgoonz/blog-w-comments
