@@ -10,6 +10,7 @@
     "sanity"
   ],
   "dependencies": {
+
     "@sanity/base": "2.10.0",
     "@sanity/components": "2.2.6",
     "@sanity/core": "2.10.0",
