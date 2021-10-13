@@ -32,6 +32,6 @@
     "@sanity/cli": "2.10.0",
     "lerna": "4.0.0",
     "postcss-preset-env": "6.7.0",
-    "tailwindcss": "2.2.7"
+    "tailwindcss": "2.2.17"
   }
 }
