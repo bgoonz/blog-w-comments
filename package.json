@@ -27,7 +27,7 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@sanity/cli": "^2.0.5",
     "lerna": "^4.0.0",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "7.0.1",
     "tailwindcss": "^2.1.2"
   }
 }
