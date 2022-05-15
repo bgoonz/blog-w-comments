@@ -10,18 +10,18 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "2.22.0",
+    "@sanity/base": "2.30.0",
     "@sanity/components": "2.14.0",
-    "@sanity/core": "2.22.0",
-    "@sanity/default-layout": "2.22.0",
-    "@sanity/default-login": "2.22.0",
-    "@sanity/desk-tool": "2.22.2",
-    "@sanity/vision": "2.22.0",
+    "@sanity/core": "2.30.0",
+    "@sanity/default-layout": "2.30.0",
+    "@sanity/default-login": "2.30.0",
+    "@sanity/desk-tool": "2.30.0",
+    "@sanity/vision": "2.30.0",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "7.3.6",
-    "sanity-plugin-asset-source-unsplash": "0.1.5",
+    "sanity-plugin-asset-source-unsplash": "0.2.1",
     "styled-components": "^5.2.0"
   }
 }
